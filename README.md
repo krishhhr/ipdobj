@@ -18,8 +18,8 @@ To run the project locally, make sure you have:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/krishhhr/ipdobj.git
+   cd ipdobj
    ```
 
 2. Install dependencies:
