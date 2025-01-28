@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🤖 Object Detection with Speech Output & Distance Measurement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React app uses the **Coco-SSD model** from TensorFlow.js to perform **object detection** and calculate the distance to objects detected in the webcam feed. It gives **verbal feedback** about nearby objects with a custom speech rate, and based on the proximity, it generates different messages for objects like "person" and "motorcycle".
 
-## Available Scripts
+## 🌟 Features:
+- **Object Detection**: Detects objects in real-time using the webcam.
+- **Distance Calculation**: Estimates the distance to detected objects.
+- **Speech Feedback**: Provides voice alerts based on the detected objects and their distance.
 
-In the project directory, you can run:
+## ⚙️ Setup Instructions
 
-### `npm start`
+### 🔧 Prerequisites:
+To run the project locally, make sure you have:
+- **Node.js** (Version >= 14.x)
+- **npm** (Node package manager)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🚀 Steps to Run Locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-### `npm test`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the app:
+   ```bash
+   npm start
+   ```
+   The app will run on `http://localhost:3000`.
 
-### `npm run build`
+## 🛠️ How It Works:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Webcam Feed**: The webcam captures the video feed, which is analyzed in real-time.
+- **Model Prediction**: The **Coco-SSD** model detects objects and their bounding boxes.
+- **Distance Calculation**: The app calculates the distance of detected objects based on the size of the bounding box.
+- **Speech Output**: If the detected object is within a certain distance, it triggers a speech message using the browser's speech synthesis API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧑‍💻 Contributing
+Feel free to fork the repo, make improvements, or report issues! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Commit your changes.
+4. Open a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📝 License:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### `npm run eject`
+## 🎮 Acknowledgments:
+- **TensorFlow.js** and **Coco-SSD** for the object detection model.
+- **React** and **Webcam** for the user interface and webcam handling.
+- **Speech Synthesis API** for generating voice alerts.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Technologies Used:
+- React
+- TensorFlow.js
+- Speech Synthesis API
+- Coco-SSD Model
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bring your webcam and have real-time object detection and verbal feedback with our app! 🎤👀
